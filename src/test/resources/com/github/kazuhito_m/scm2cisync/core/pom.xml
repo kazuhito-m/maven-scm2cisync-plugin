@@ -45,13 +45,13 @@
                             <ciControlJobName>base-jobs-kikker</ciControlJobName>
                             <!-- job追加の際のテンプレートとするconfig.xmlファイル -->
                             <jenkinsJobTemplatePath>
-                                src/test/resources/tk/bnbm/scm2cisync/core/config.xml
+                                src/test/resources/com/github/kazuhito_m/scm2cisync/core/config.xml
                             </jenkinsJobTemplatePath>
                             <!-- SCM側で削除されていた場合にCI側のjobを無効化するか否か -->
                             <jobDisableByScmDelete>true</jobDisableByScmDelete>
                             <!-- 前回実行状況を記録するファイルパス(ローカル) -->
                             <lastProfilePath>
-                                target/test-classes/resources/tk/bnbm/scm2cisync/core/scmSyncLastProfile.xml
+                                target/test-classes/resources/scmSyncLastProfile.xml
                             </lastProfilePath>
                         </synchronizeTarget>
                     </synchronizeTargets>
