@@ -1,0 +1,16 @@
+ ------
+ 改訂履歴
+ ------
+
+改訂履歴
+
+  maven-mcheck-pluginに追加されたチェックの履歴です。
+
+{1.0.0} 2012/12/21 Kazuhito Miura (@kazuhito_m)
+
+  * 新規作成
+
+    * ScmToCiSynchronizerMojo
+
+     * 「ソース管理システムとCIサーバの同期」用Mojoクラスを新設。
+

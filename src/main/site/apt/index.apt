@@ -1,0 +1,16 @@
+ ------
+ 概要
+ ------
+
+maven-scm2cisync-plugin とは
+
+  ソース管理システム(ex.Subversion)とCIサーバ(ex.Jenkins)を同期するMavenプラグインです。
+
+* ゴール一覧
+
+  maven-scm2cisync-plugin では、以下のゴールを提供します。
+
+   * <<sync>>: ソース管理システムとCIサーバの同期
+
+     * pom.xmlに指定された設定を元に、ソース管理システム側のディレクトリ構造を読み、CIサーバ側にジョブを作成します。
+
