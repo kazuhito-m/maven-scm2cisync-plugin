@@ -18,7 +18,7 @@ Kazuhito Miura ( @kazuhito_m )
 1. 直下にて、以下のコマンドを実行します。
     - `mvn clean install`
 
-### プラグインのインストール
+### プラグインの実行
 
 1. プラグイン実行用の `pom.xml` を作成する
     - [./src/test/resources/com/github/kazuhito_m/scm2cisync/core/pom.xml](./src/test/resources/com/github/kazuhito_m/scm2cisync/core/pom.xml) に`すべてのパラメータを網羅したテンプレート` があるため、これをコピーし作成する
