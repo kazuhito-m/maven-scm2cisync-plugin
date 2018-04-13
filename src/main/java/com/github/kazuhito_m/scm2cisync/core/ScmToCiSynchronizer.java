@@ -171,6 +171,10 @@ public class ScmToCiSynchronizer {
 
         // テンプレートファイルの値を置換、文字列で受け取る。
         File templateFile = new File(st.getJenkinsJobTemplatePath());
+
+        System.out.println("直前のgetJenkinsJobTemplatePath  : " + st.getJenkinsJobTemplatePath());
+
+
         String config = getReplaceText(templateFile, context);
 
         // その文字列を種としてInputStreamを作成、CiControlerを使いjobを新規登録する。
@@ -198,6 +202,11 @@ public class ScmToCiSynchronizer {
 
         // テンプレートの読み込み設定。VelocityEngineはClassPath中からファイルを読むように
         Properties props = new Properties();
+
+
+        System.out.println("templateFile の状況は？  : " + templateFile);
+
+
         props.setProperty("file.resource.loader.path", templateFile.getParentFile().getCanonicalPath());
         VelocityEngine ve = new VelocityEngine();
         ve.init(props);
